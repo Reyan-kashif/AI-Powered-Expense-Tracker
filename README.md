@@ -14,15 +14,15 @@ A secure C++ application that:
    - cURL (for API calls)
 
 2. Compile & Run:
-   # Linux/macOS
+# Linux/macOS
    g++ main.cpp -o expense_tracker -lssl -lcrypto -lcurl
    ./expense_tracker
 
-   # Windows (MinGW)
+# Windows (MinGW)
    g++ main.cpp -o expense_tracker -lssl -lcrypto -lcurl -lws2_32
    expense_tracker.exe
 
-Security System (Phase 1)
+# Security System (Phase 1)
 Key Features:
 1. SHA-256 Password Hashing:
 // Converts passwords to irreversible 64-character hashes
@@ -34,7 +34,7 @@ const string AES_KEY = "ThisIsA32ByteLongSecretKeyForAES!";
 string encrypted = aes25_encrypt(text, AES_KEY, iv_source);
 - Encrypted data stored in users.txt 
 
-Smart Categorization (Phase 2)
+# Smart Categorization (Phase 2)
 Steps:
 1. User inputs raw expense:
 "500 for dinner at KFC yesterday"
@@ -44,7 +44,7 @@ Category: food
 Description: dinner at KFC
 3. Saves to /expenses/food.csv with the timestamp
 
-Data Storage & Management (Phase 3)
+# Data Storage & Management (Phase 3)
 Key Features:
 1. Automated CSV Handling:
 Creates /expenses/ folder on first run
@@ -65,7 +65,7 @@ void ManualEntry() { // If AI categorization fails
 Checks file permissions before writing
 Validates directory creation with std::filesystem
 
- Reporting Features (Phase 4)
+# Reporting Features (Phase 4)
 Sample Outputs:
 1. Category Report:
 
@@ -79,7 +79,7 @@ Sample Outputs:
 ---------------------------
 | Category | Total Amount |
 ---------------------------
-| food     | 1500         |
+| food     | 1500         |  
 | transport| 800          |
 ---------------------------
 
@@ -89,8 +89,8 @@ Important Notes
 3. Change hardcoded AES key for production use
 
 Team 
-Phase	Component	Contributor
-1	Authentication	Irab Zara
-2	AI Integration	Reyan Kashif
-3	File Management	Ali Kamran
-4	Reporting	Reyan Kashif
+Phase	Component	Contributor  
+1	Authentication	Irab Zara  
+2	AI Integration	Reyan Kashif  
+3	File Management	Ali Kamran  
+4	Reporting	Reyan Kashif  

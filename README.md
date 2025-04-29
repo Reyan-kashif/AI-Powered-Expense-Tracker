@@ -142,4 +142,3 @@ void ManualEntry() { // If AI categorization fails
 | 4     | Reporting        | Reyan Kashif    |  
 
 ---
-
